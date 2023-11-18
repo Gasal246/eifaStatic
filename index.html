@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Gasal">
+    <meta name="description"
+        content="Eifa Football Academy is The One Of Best Football Coaching Academy Situated in Kerala, 
+        Providing Advanced Football Training Though Proffessional AFC & AIFF Certified Coaches.">
+    <meta name="keywords" content="Gallery, Locations, Coaches">
+    <title>EIFA-Academy</title>
+    <link rel="shortcut icon" type="image" href="images/eflogotitle.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawsm.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <style>
+        @font-face {
+    font-family: mcontenthfont;
+    src: url(fonts/abel-regular.ttf);
+}
+@font-face {
+    font-family: mcontentpfont;
+    src: url(fonts/Bainsley_Roman.otf);
+}
+@font-face {
+    font-family: sidehfont;
+    src: url(fonts/Azonix.otf);
+}
+@font-face {
+    font-family: pandp;
+    src: url(fonts/pricedown\ bl.otf);
+}
+@font-face {
+    font-family: headfond;
+    src: url(fonts/ethnocentric\ rg.otf);
+}
+@font-face {
+    font-family: adfont;
+    src: url(fonts/Advertising\ Script\ Bold\ Trial.ttf);
+}
+body{
+    margin: initial;
+}
+/* HEADER BACKzz */
+.header{
+    background-color: rgba(0, 0, 0, 0.764);
+    background-image: url(images/headerbk.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    padding-bottom: 60px;
+}
+
+.iconbars{
+    font-size: 24px;
+    color: #ebd291;
+}
+.iconx{
+    font-size: 32px;
+    color: #ff3333;
+    text-shadow: 2px 3px 5px #860000;
+    display: none;
+}
+
+.navLink{
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.2s;
+    transition: ease-in;
+    border-bottom: 3px solid #565657c7;
+    text-align: center;
+    text-shadow: 4px 2px 10px #dc0054;
+}
+.navLink:hover{
+    font-weight: 600;
+    border-bottom: 2px solid rgb(255, 217, 0);
+    border-radius: 10px;
+    text-shadow: 3px 5px 10px #ba8b59;
+}
+.navbar .navbar-toggler{
+    outline: none!important;
+    border: none!important;
+}
+
+.eflogo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.animhdtwo{
+    text-transform: uppercase;
+   background-image: linear-gradient(
+    220deg,
+     #ff8c86 0%,
+     rgba(49, 4, 26, 0.834) 29%,
+     #ffd2b0 67%,
+     #d6ffb5 100%
+   );
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   color: #fff;
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 2s linear infinite;
+   display: inline-block;
+
+    font-weight: 800;
+    font-size: 32px;
+ }
+ 
+ @keyframes textclip {
+   to {
+     background-position: 200% center;
+   }
+}
+
+.locbtn{
+    width: 200px;
+    background: #470077;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+/* POP-UP Styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3000;
+    overflow-y: scroll;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: #d80606;
+}
+
+.popup .content p {
+    max-height: 30%;
+    overflow: auto;
+    color: #2c383d;
+    font-weight: 700;
+}
+
+.popup .content a {
+    color: #470077;
+}
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+  .eflogohold{
+    border-radius: 5px;
+}
+.efnavhold{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar{
+    border-radius: 5px;
+}
+.efslider{
+    margin-top: 20px;
+}
+.efsliderholder{
+    background-color: rgba(0, 0, 0, 0.809);
+    background-image: url(images/campsTours.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 20px;
+}
+.slidercaption:hover{
+    display: contents;
+    background-color: rgba(0, 0, 0, 0.302);
+    border-radius: 5px;
+}
+.imagepara{
+    height: 400px;
+    margin-top: 20px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 20px;
+    border-bottom: 4px solid #ae6378;
+    border-top: 4px solid #ae6378;
+    border-radius: 10px;
+}
+/* IMAGE SLIDER BRAND BTN */
+.brandbtn{
+    font-size: 28px;
+    color: rgb(255, 213, 0);
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.brandbtn:hover{
+    color: #ffffff;
+}
+
+.advtrain{
+    background-color: rgb(255, 255, 234);
+}
+
+.mcontent{
+    align-items: center;
+    color: #2d1518;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.mcontent h1{
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-shadow: 0  3px 7px #c1974a;
+    font-weight: 600;
+}
+.mcontent p{
+    font-size: 21px;
+    text-shadow: 0  3px 7px #c1974a;
+    line-height: 29px;
+}
+.mcontent2{
+    color: #234e41;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+.mcontent2 h1{
+    font-size: 29px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.mcontent2 p{
+    font-size: 21px;
+    line-height: 29px;
+}
+.pandp{
+    color: #234e41;
+    text-align: left;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+.pandp h1{
+    font-size: 29px;
+    font-family: pandp;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.pandp p{
+    font-size: 21px;
+    font-weight: bolder;
+    line-height: 29px;
+}
+
+.eifacoaches{
+    background-image: linear-gradient(#2aa771, rgb(3, 41, 50));
+    padding-bottom: 15px;
+}
+.coaches{
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.coach{
+    background-color: #fff8c0;
+    border-radius: 10px;
+}
+.coach-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+}
+.coach h3{
+    font-size: 22px;
+}
+.coach h4{
+    font-size: 18px;
+}
+
+/* THE MISSION AND VISSION */
+.misvish{
+    text-transform: uppercase;
+   background-image: linear-gradient(
+    220deg,
+     #3d0020 0%,
+     #ffbadc 29%,
+     #a95ab9 67%,
+     #422a00 100%
+   );
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   color: #fff;
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 1s linear infinite;
+   display: inline-block;
+
+    font-weight: 800;
+    font-size: 32px;
+    font-family: headfond;
+ }
+ 
+ @keyframes textclip {
+   to {
+     background-position: 500% center;
+   }
+}
+.misvis-box{
+    background-color: rgba(54, 48, 36, 0.539);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    overflow-y: scroll;
+    height: 330px;
+}
+.misvis-box p{
+    color: rgb(184, 159, 129);
+    font-weight: 500;
+    font-size: 20px;
+    text-shadow: 3px 3px 15px black;
+}
+.misvisrow{
+    /* margin-top: 80px; */
+    padding: 40px;
+    background-color: #000000af;
+    background-image: url(images/ourCoaches.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.founder{
+    background-image: linear-gradient(rgb(252, 227, 179), white);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* QR Support */
+.qrsupport{
+    background-color: rgba(0, 0, 0, 0.837);
+    background-image: url(images/back3.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 40px;
+    margin-top: 20px;
+}
+.qrpara .sp2{
+    color: #00bba5;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 2px 4px 2px #147861;
+}
+.qrinfo{
+    color: white;
+}
+
+/* Personaali Row */
+.persons{
+    overflow-x: auto;
+}
+.person{
+    width: 14rem;
+    border-radius: 8px;
+    box-shadow: 0 0 25px 2px rgba(134, 0, 74, 0.85);
+    border: 2px solid white;
+}
+.personname{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+.persontext{
+    font-weight: 500;
+    color: #161616;
+}
+.personaliholder{
+    overflow-x: auto;
+}
+.personalisection{
+    background-color: orange;
+    padding-bottom: 30px;
+}
+.personalisection .ttl{
+    padding-top: 25px;
+    color: #090909;
+    font-weight: 700;
+    text-shadow: 2px 3px 5px black;
+}
+
+/* Gallery ROW */
+.mediarow{
+    background-color: rgba(0, 0, 0, 0.585);
+    background-image: url(images/schoolPrograms.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+/* Scroll To Top */
+#btnScrollToTop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #380016;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 3000;
+}
+#btnScrollToTop:active{
+    background: #630029;
+}
+
+/* CONTENTS BTN in Header */
+.regbtn{
+    width: 160px;
+    outline: none!important;
+    background-image: linear-gradient(to right, #e84a5f, #fe9d96);
+    border-radius: 35px;
+    border: none;
+    float: right;
+    color: #02161e;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .4s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.regbtn:hover{
+    background-image: linear-gradient(to right, #fe9d96, #f0566b, #e84a5f);
+    transition: 0.4s;
+}
+
+/* Request a Call */
+.reqcallbtn{
+    width: 140px;
+    height: 30px;
+    outline: none!important;
+    background-image: linear-gradient(to right, #e84a5f, #fe9d96,#e84a5f);
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+    color: #02161e;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .4s;
+}
+.reqcallbtn:hover{
+    background-image: linear-gradient(to right, #fe9d96, #f4e195, #fe9d96);
+    color: darkblue;
+}
+
+/* THE SIDE BAR STYLING */
+.sidebar{
+    background: rgba(122, 88, 46, 0.515);
+    position: fixed;
+    z-index: 3000;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: 45px;
+    padding: 8px;
+}
+.sidebar i{
+    color: rgb(60, 2, 19);
+    font-size: 22px;
+    padding: 4px;
+}
+.sidebar i:hover{
+    color: rgb(201, 141, 1);
+    cursor: pointer;
+}
+
+/* footer */
+footer{
+    background-color: #090909;
+}
+.myinfo{
+    color: #088f80;
+    font-size: 18px;
+}
+
+/*           EDITED CONTENTS IN COMPUTER AND MOBILE           */
+
+
+/* SCROLL BAR EDITS */
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track{
+    background: rgba(255, 255, 255, 0.413);
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient( #1f010f, #b53d4d);
+    border-radius: 20px;
+}
+
+/* ON-MOBILE EDITS */
+@media (max-width: 760px){
+    .coaches::-webkit-scrollbar{
+        display: none;
+    }
+    .personaliholder::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+/* On COMPUTER EDITS */
+@media (min-width: 760px){
+    .navphone{
+        display: none;
+    }
+}
+    </style>
+
+</head>
+<body>
+    <header class="header">
+        <!-- NAV Part -->
+        <nav class="navbar navbar-expand-lg bg-custom navbar-dark" id="nav" style="background: none;width: 100%;top: 0;z-index: 1000;">
+            <a class="navbar-brand" href="#"
+                style="color: #ebd291; font-weight: 600;letter-spacing: 1.5px;">
+                <img src="images/eflogotitle.png" class="img-fluid" style="width: 40px; height: 40px;"> EIFA ACADEMY
+            </a>
+
+            <button class="navbar-toggler menuicons" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                <span>
+                    <i class="fa fa-solid fa-bars iconbars"></i>
+                    <i class="fa fa-solid fa-xmark iconx"></i>
+                </span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link navLink" style="color: #fff9dc;" href="#">Home <i class="homeic fa-solid fa-house"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" style="color: #fff9dc;" href="#"
+                            id="aboutbtn">About <i class="aboutic fa-solid fa-address-card"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="gallbtn nav-link navLink" style="color: #fff9dc;"
+                            href="pages/gallery.html">Gallery <i class="gallic fa-solid fa-image"></i></a>
+                    </li>
+                    <li class="nav-item dropdown dropcnt">
+                        <a class="explorebtn nav-link dropdown-toggle navLink" style="color: #fff9dc;"
+                            href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Explore-EIFA <i class="exploreic fa-brands fa-wpexplorer"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item efteambtn" href="#" >Support System <i
+                                    class="eifatmic fa-solid fa-people-group"></i></a>
+                            <a class="dropdown-item adtrainingbtn" href="#">Advanced Training <i
+                                    class="fa fa-solid fa-futbol"></i></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item mssnvssnbtn" href="#">Mission & Vission <i
+                                    class="fa fa-solid fa-eye-low-vision"></i></a>
+                            <a class="dropdown-item coachesbtn" href="#">Our Coaches <i
+                                    class="fa fa-solid fa-eye-low-vision"></i></a>
+                            <a class="dropdown-item fdmessagebtn" href="#">Founder & Director <i
+                                    class="fa fa-solid fa-eye-low-vision"></i></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" style="color: #fff9dc;" href="pages/administrators.html"
+                            id="adminbtn">Administrators <i class="adminic fa-solid fa-people-group"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contactbtn navLink" href="#" style="color: #fff9dc;"
+                            id="contactusbtn">Contact Us <i class="contactic fa fa-duotone fa-user-group"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- TEXT-PART -->
+        <div class="container mt-5 text-center">
+            <div class="row mt-4">
+                <div class="eflogotext col-12 col-lg-12">
+                    <h3 class="animhdtwo" >Exotic International Football Academy</h3>
+                </div>
+                <div class="col-12 col-lg-6 mt-4" style="margin-top: 20px;">
+                    <button class="regbtn p-2 mr-3">Contents <i class="fa-solid fa-message fa-bounce"></i></button>
+                </div>
+                <div class="col-12 col-lg-6 mt-3 d-none d-md-block" style="padding-top: 10px;">
+                    <img src="images/eflogoheader.png" class="col-lg-2">
+                    <img src="images/karimlogo.png" class="col-lg-2">
+                    <img src="images/tnclogo.png" class="col-lg-2">
+                    <img src="images/zycologoheader.png" class="col-lg-2">
+                    <img src="images/bircheslogo.png" class="col-lg-2">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- THE SIDE BAR -->
+    <div class="sidebar" align="CENTER">
+        <span class="sidebars">
+            <i class="fa-solid fa-caret-down sdiconbars" style="color: blue; font-size: 28px;"></i>
+            <i class="fa-solid fa-xmark sdiconx" style="display: none;color: red; font-size: 24px;"></i>
+        </span>
+        <span class="sidebaricons" style="display: none;">
+            <a href="index.html"><i class="fa-solid fa-home "></i></a>
+            <a href="pages/gallery.html"><i class="fa-solid fa-image "></i></a>
+            <a href="#commentpop"><i class="fa-solid fa-address-book "></i></a>
+            <a href="#locationpop"><i class="fa-solid fa-location "></i></a>
+        </span>
+    </div>
+    
+    <!-- THE COMMENT OPTION OF SIDE-BAR -->
+    <div id="commentpop" class="overlay">
+        <div class="popup">
+            <h2>Contact Us</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>
+                    KARIMPALAYIL :-<br>
+                    Mr.Noushad : <a href="tel:+918590047164">+91 8590047164</a><br>
+                    Mr.Ajmal : <a href="tel:+919447115101">+91 9447115101</a>
+                </p>
+                <p>
+                    ZYCO :-<br>
+                    Karinkallathani : <a href="tel:+919169313313">+91 9169313313</a><br>
+                    Mr.Shihab : <a href="tel:+919605952592">+91 9605952592</a>
+                </p>
+                <p>
+                    TNC :-<br>
+                    Mr.Sadakathulla : <a href="tel:+919037020243">+91 9037020243</a><br>
+                    Mr.Jazeel : <a href="tel:+918089630516">+91 8089630516</a>
+                </p>
+                <p>
+                    BIRCHES :-<br>
+                    Mr.Muneer : <a href="tel:+919037020243">+91 9746672499</a><br>
+                    Mr.Shabeer : <a href="tel:+918089630516">+91 7034718888</a>
+                </p>
+    
+                <div class="row">
+                    <a href="mailto:eifafootballacademy@gmail.com?subject=Direct Mail From EIFA Website."><i
+                            class="fa-solid fa-envelope" style="font-size: 28px; padding: 10px;"></i></a>
+                    <a href="https://t.me/+HDhq3dDojk41NWM1"><i class="fa-brands fa-telegram"
+                            style="font-size: 28px; padding: 10px;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- THE LOCATION OPTION OF SIDE-BAR -->
+    <div id="locationpop" class="overlay">
+        <div class="popup">
+            <h2>Our Locations</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>
+                    KARIMPALAYIL :-<br>
+                    <a href="https://goo.gl/maps/31FyKBhxVQag8TX69" class="btn btn-success locbtn"
+                        style="color: white;">Goto Vazhampuram</a>
+                </p>
+                <p>
+                    ZYCO :-<br>
+                    <a href="https://goo.gl/maps/hLWKX7kCzkFtGLnv5" class="btn btn-success locbtn"
+                        style="color: white;">Goto Karinkallathani</a>
+                </p>
+                <p>
+                    TNC :-<br>
+                    <a href="https://goo.gl/maps/CRwjp4dvdts9S8q47" class="btn btn-success locbtn"
+                        style="color: white;">Goto Pallikkunnu</a>
+                </p>
+                <p>
+                    BIRCHES :-<br>
+                    <a href="https://goo.gl/maps/5zTgsGsruLF32d8M8" class="btn btn-success locbtn"
+                        style="color: white;">Goto Kunthipuzha</a>
+                </p>
+    
+                <div class="row">
+                    <a href="mailto:eifafootballacademy@gmail.com?subject=Direct Mail From EIFA Website."><i
+                            class="fa-solid fa-envelope" style="font-size: 28px; padding: 10px;"></i></a>
+                    <a href="https://t.me/+HDhq3dDojk41NWM1"><i class="fa-brands fa-telegram"
+                            style="font-size: 28px; padding: 10px;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <div class="row">
+        <div class="col-1 col-lg-1">
+            <button id="btnScrollToTop">
+                <i class="fa fa-arrow-up fa-bounce"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- THE CENTER CONTENTS ABOUT PAGE ROW -->
+    <section>
+        <div class="container" data-offset-top="400">
+    
+            <div class="row" id="row2">
+                <div align="CENTER" class="mcontentholder mcontent col-11 col-lg-11 container">
+                    <h1 class=""><i class="fa-solid fa-beat-fade fa-circle-info"></i> EIFA - Exotic International Football
+                        Academy</h1>
+                    <p class="">EIFA Football Academy (EIFA) is a niche soccer academy headquatered in PALAKKAD, with AFC, AIFF,
+                        & FIFA
+                        qualified coaches We focus
+                        on the local talent pool, to identify the talented, passionated and committed and guide them to playing
+                        the
+                        highest level of soccer.
+                    </p>
+                </div>
+                <div class="mcontent col-12 col-lg-6">
+                    <h1 style="text-align: left;"><i class="fa fa-spin fa-futbol" style="font-size: 34px;"></i> Sports Science
+                        Classes</h1>
+                    <p style="text-align: left;">
+                        Football is a complex sport requiring many factors to produce top footballers. We conduct monthly Sports
+                        Science Classes to explore the
+                        various facets needed to produce well-rounded footballers such as sports psycology, fitness, and
+                        tactics.
+                    </p>
+                </div>
+                <div class="mcontent col-12 col-lg-6">
+                    <h1 style="text-align: left;"><i class="fa fa-spin fa-futbol" style="font-size: 34px;"></i> Weekly Technical
+                        Sessions</h1>
+                    <p style="text-align: left;">
+                        Technical Skills are the foundation of good football. The skills needed vary from one posision to other,
+                        with a Goalkeeper needed different
+                        skills Than a field player. Our weekly sessions work on Enlish FA's 5 Fundamentals of soccer: Dribbling,
+                        Passing, Shooting, Heading and Touch.
+                    </p>
+                </div>
+                <div class="mcontent col-12 col-lg-6">
+                    <h1 style="text-align: left;"><i class="fa fa-spin fa-futbol" style="font-size: 34px;"></i> Weekly Tactical
+                        Sessions</h1>
+                    <p style="text-align: left;">
+                        Football often comes down to the strategy that a team employs at the end of close game. We examine and
+                        teach team tactics, Prepareness and Organisational
+                        skills needed to play effective football. Utilising UEFA designed 8-V-8 sessions, we deliver 90min
+                        sessions training our players in tactical principles of
+                        pressing, transition, counter attack and fluid movement.
+                    </p>
+                </div>
+                <div class="mcontent col-12 col-lg-6">
+                    <h1 style="text-align: left;"><i class="fa fa-spin fa-futbol" style="font-size: 34px;"></i> Set Play
+                        Sessions</h1>
+                    <p style="text-align: left;">
+                        50% of goals are scored from set play. We organize a weekly session improving set play, freekicks,
+                        corners and even throw-ins.
+                    </p>
+                    <p style="color: rgb(96, 78, 78);">Contact us to set a play :-</p>
+                    <i class="fa-bounce fa-solid fa-phone"></i><a href="tel:+918590047164"><button class="reqcallbtn">Request a
+                            call</button></a>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+
+    <!-- IMAGE-SLIDER ROW -->
+    <section>
+        <div style="margin-top: 100px;" class="row" id="row3" >
+            <div align="CENTER" class="efsliderholder col-12 col-lg-12" >
+                <div>
+                    <h1
+                        style="color: #fff1e7;font-size: 20px; margin-bottom: -10px; font-weight: bolder; letter-spacing: 3px;margin-bottom: 10px;">
+                        HIGHLIGHTED Web Contents :-</h1>
+                </div>
+                <div class="row ">
+                    <div class="efslider col-12 col-lg-7">
+                        <div id="carouselExampleIndicators" class="efsliderin carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid"
+                                        src="images/hcon/img1.1.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid" src="images/album/trn (1).jpg"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid" src="images/hcon/hl10.jpeg"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid" src="images/hcon/hl11.jpeg"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid" src="images/hcon/hl12.jpeg"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid" src="images/hcon/hl13.jpeg"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid" src="images/album/trn (2).jpg"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid" src="images/hcon/tr4.jpg"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid" src="images/hcon/tr5.jpg"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid" src="images/hcon/tr6.jpg"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid" src="images/hcon/img2.jpg"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid" src="images/album/trn (14).jpg"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid" src="images/hcon/karimfro.jpg"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid" src="images/TNC/1.jpg"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="border-radius: 10px; object-fit: fill;" class="img-fluid" src="images/Briches/brichesing.jpg"
+                                        alt="Second slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- The Details Of Highlighted Contents -->
+                    <div class="sliderpara col-12 col-lg-3 mt-5" style="float: right;">
+                        <div class="" >
+                            <p class="imagepara" >
+                                <i class="fa-solid fa-star"></i> Provided Classes and Sessions. <br>
+                                <i class="fa-solid fa-star"></i> Advanced Training. <br>
+                                <i class="fa-solid fa-star"></i> Strategy & Nutrition. <br>
+                                <i class="fa-solid fa-star"></i> Our Coaches. <br>
+                                <i class="fa-solid fa-star"></i> Mission & Vission. <br>
+                                <i class="fa-solid fa-star"></i> Our Support System. <br>
+                                <!-- <i class="fa-shake fa-solid fa-bell joinbtnlink" style="font-size: 24px;"></i> <button class="joinbtnlink" style="outline: none;border:none;background:none;">Click To Join Us</button> <br> -->
+                                <a href="http://instagram.com/_eifa_academy"><i class="brandbtn fa-brands fa-instagram"></i></a>
+                                <a href="https://t.me/+HDhq3dDojk41NWM1"><i class="brandbtn fa-brands fa-telegram"></i></a>
+                                <a href="mailto:eifafootballacademy@gmail.com?subject=Direct Mail From EIFA Website."><i class="brandbtn fa-solid fa-envelope"></i></a>
+                                <a href="https://www.facebook.com/Exotic-International-Football-Academy-105947451856552/"><i class="brandbtn fa-brands fa-facebook"></i></a>
+                                <a href="https://youtube.com/channel/UC6FS6LKVSJOCtX9Ak04qqTg"><i class="brandbtn fa-brands fa-youtube"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- OTHER MCONTENTS 2 -->
+    <section class="advtrain">
+        <div class="container" id="adtrainingrow" style="margin-top: 80px;">
+            <div class="row">
+                <div class="mcontent2 col-12 col-lg-12" align="CENTER">
+                    <h1 style="text-align: left;padding-left:20px;">Advanced Football Training</h1>
+                    <p style="text-align: left; padding-left:10px;"><i class="fa fa-beat-fade fa-duotone fa-hand-point-right"></i>
+                        Eifa builds the most elite players through focusing equality on technical(Dribbling, Shooting, Crossing,
+                        Heading, Tacling), tactical strength
+                        and fitness and mental strength.
+                    </p>
+                    <p style="text-align: left; padding-left:10px;"><i class="fa fa-beat-fade fa-duotone fa-hand-point-right"></i>
+                        Incepted in March-2022 our mission at the football acdemy is to identify the best local football talent, 
+                        ages 6-18 years old, devolop these talented players, and take them to the next level.
+                    </p>
+                    <p style="text-align: left; padding-left:10px;"><i class="fa fa-beat-fade fa-duotone fa-hand-point-right"></i>
+                        EIFA takes a unique approach into its programme,  Using a successful formula of fitness, Technical and Tactical Sessions to devolop the
+                        complete football education. Each of our players is also given a weekly personal training program to further work on their specific fitnes and 
+                        technical needs.
+                    </p>
+                    <p style="text-align: left; padding-left:10px;"><i class="fa fa-beat-fade fa-duotone fa-hand-point-right"></i>
+                        Our players are carefully selected and scouted with the aim of continuously developing a spirited team
+                        able to challenge for silverwares and produce world class players. EIFA is delighted to have the 
+                        opportunity of working with KERALA's fitness players.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-6 mcontent2" style="background-image:linear-gradient( rgb(249, 243, 229),rgb(228, 208, 169));">
+                    <h1 style="text-align: left;"><i class="fa fa-bounce fa-solid fa-chalkboard-user"></i> Game Strategy</h1>
+                    <p style="text-align: left;">
+                        Football often comes down to the strategy that a team employs at the end of close game. We examine and teach team tactics, Prepareness and Organisational
+                        skills needed to play effective football. Utilising UEFA designed 8 V 8 sessions, we deliver 90min sessions training our players in tactical principles of
+                        pressing, transition, counter attack and fluid movement. 
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 mcontent2" style="background-image:linear-gradient( rgb(249, 243, 229),rgb(228, 208, 169));">
+                    <h1 style="text-align: left;"><i class="fa-beat fa-brands fa-nutritionix"></i> Nutrition</h1>
+                    <p style="text-align: left;">
+                        When not in the Gym or training field young players ned to be able to recover from the effort and avoid injuries. A healthy body is a healthy
+                        athlete that is why one of our priorities is to inform and educate the importance of nutrition. Adopting of a healthy lifestyle is a key element of our
+                        more educational approach to football and we want to ensure all our players have a clear understanding of the 'good' and 'bad' in food.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PRIDE AND PASSION ROW -->
+    <section>
+        <div class="container m-auto" id="passionrow" style="margin-top: 40px;">
+            <div class="row pandp">
+                <h1><i class="fa fa-flip fa-solid fa-trophy" style="font-size: 30px;"></i> PRIDE & PASSION MEETS THE SUCCESS</h1>
+                <p>
+                    From inception, the success of The Football Academy has been built on the quality of our coaching. We truly believe that football isn't a
+                    one-dimensional game so we combine different philosophies when it comes to teaching our students the principles of soccer.
+                </p>
+                <P>
+                    Our coaches trained from different parts of world, enquipped not only with the relevent proffessional certifications, They all contribute with
+                    their diverse coaching and playing experience to delivering rich, full-scale soccer learning curriculum.
+                </P>
+            </div>
+        </div>
+    </section>
+
+    <!-- EIFA COACHES -->
+    <section class="eifacoaches" id="coachesrow">
+        <div class="row">
+            <div class="container">
+                <div class="col-md-12 text-center">
+                    <P style="color: white;padding-top:20px; font-weight: 500;font-family: mcontenthfont;font-size: 20px;">
+                        <i class="fa fa-solid fa-shake fa-lock"></i> EIFA Provides the best football coaching in PALAKKAD through its team of proffessional AIFF & AFC
+                        qualified soccer coaches.
+                    </P>
+                </div>
+            </div>
+        </div>
+        <div class="coaches ml-2 mr-2 mb-2 d-flex ">
+            <div class="coach p-4 d-flex col-12 col-md-4 mr-2">
+                <img src="images/Photoshoots/noushad.jpg" class="coach-img">
+                <div class="ml-4">
+                    <h3>Mr.Noushad</h3>
+                    <h4>Founder & CEO <br>D-Coach <br> Kerala - India</h4>
+                </div>
+            </div>
+            <div class="coach p-4 d-flex col-12 col-md-4 mr-2">
+                <img src="images/Photoshoots/salamsir.jpg" class="coach-img">
+                <div class="ml-4">
+                    <h3>Abdul Salam</h3>
+                    <h4>Technical Director <br>AFC C Diploma-Coach <br> Kerala - India</h4>
+                </div>
+            </div>
+            <div class="coach p-4 d-flex col-12 col-md-4 mr-2">
+                <img src="images/Photoshoots/ajmal.jpg" class="coach-img">
+                <div class="ml-4">
+                    <h3>Ajmal</h3>
+                    <h4>D-Coach <br>Karimpalayil Kerala - India</h4>
+                </div>
+            </div>
+            <div class="coach p-4 d-flex col-12 col-md-4 mr-2">
+                <img src="images/Photoshoots/jazeel.jpg" class="coach-img">
+                <div class="ml-4">
+                    <h3>Mu.Jaseel.K</h3>
+                    <h4>D-Coach <br>TNC Pallikkunnu <br> Kerala - India</h4>
+                </div>
+            </div>
+            <div class="coach p-4 d-flex col-12 col-md-4 mr-2">
+                <img src="images/Photoshoots/kunjalavi.jpg" class="coach-img">
+                <div class="ml-4">
+                    <h3>Kunjalavi Master</h3>
+                    <h4>AIFF D-Coach <br>First Aid Course <br> Kerala - India</h4>
+                </div>
+            </div>
+            <div class="coach p-4 d-flex col-12 col-md-4 mr-2">
+                <img src="images/Photoshoots/shabeerali.jpg" class="coach-img">
+                <div class="ml-4">
+                    <h3>Shabeer Ali</h3>
+                    <h4>D-Coach <br>Kerala - India</h4>
+                </div>
+            </div>
+            <div class="coach p-4 d-flex col-12 col-md-4 mr-2">
+                <img src="images/Photoshoots/baburaj.jpg" class="coach-img">
+                <div class="ml-4">
+                    <h3>K Baburaj</h3>
+                    <h4>D-Coach <br>Grass Root</h4>
+                </div>
+            </div>
+        </div>
+        <div class="navphone row">
+            <div class="container">
+                <div class="col-md-12 text-center">
+                    <P style="color: white;padding-top:20px; font-weight: 500;font-family: mcontenthfont;font-size: 20px;">
+                        Slide Left To View Coaches
+                    </P>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- OUR MISSION AND VISSION -->
+    <section>
+        <div align="CENTER" class="row misvisrow mt-4" id="missionrow">
+            <div class="col-12 col-lg-6">
+                <div class="misvis-box">
+                    <h5 class="misvish" >OUR MISSION </h5>
+                    <p>
+                        The football Academy was formed to povide the oppertunities for youth elite soccer players to train and
+                        complete in KERALA and Internationaly.
+                    </p>
+                    <p>
+                        Our mission is to devolop soccer skills as well as maintain an environment that embodies the core values
+                        of integrity, leadership, Perseverence, respect,
+                        and Teamwork while enhancing self-esteem, Promoting self Confidence and cultivating a life long pattern
+                        for the beautiful game of soccer.
+                    </p>
+                    <p>
+                        While our teams strive to complete at the highest levels of completion, EIFA is fully committed to player devolopment.
+                    </p>
+                    <p>
+                        We believe that a commitment to player devolopment establishes a solid technical and mental foundation for which to continue
+                        building upon at EIFA and beyond.
+                    </p>
+                    <p>
+                        We intented to accomplish the mission with experienced coaching staff that represent the most effective and comprehensive club soccer
+                        program in dubai.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="misvis-box">
+                    <h5 class="misvish">OUR VISSION</h5>
+                    <ul align="left">
+                        <li><p>Develop student/athletes who are committed to personal excellence and team success.</p></li>
+                        <li><p>Provide an inspirational and motivational environment where preparation, practice, and hard work generate legitimate opportunities for success.</p></li>
+                        <li><p>Emphasize the importance and development of fundamentals and techniques necessary for positive experiences in football and in life.</p></li>
+                        <li><p>Develop well-disciplined student-athletes who strive for personal, educational and athletic excellence both on the field and in the community.</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOUNDER & DIRECTOR MESSAGE -->
+    <section>
+        <div class="founder" id="fdmessagerow">
+            <div class="row container col-12 col-lg-12" align="CENTER" style="margin-top: 40px;" id="msgrow">
+                <div class="col-12 col-lg-6">
+                    <div class=""
+                        style="border-bottom: 5px solid #6b946f;border-top: 5px solid #6b946f;border-radius: 10px; border-left: 2px solid #83a987;border-right: 2px solid #83a987; padding: 30px;margin-top: 20px;">
+                        <div class="img-fluid " align="CENTER"
+                            style="background-image: url(images/personali_2.jpg); width: 100px;height: 100px;background-position: center;background-size: cover;border-radius: 60px;box-shadow: 0 0 20px 5px rgb(140, 106, 106);">
+                        </div>
+                        <h4 style="color: #573f4c; margin-top: 10px;">FOUNDER MESSAGE <i
+                                class="founderbtn fa fa-bounce fa-solid fa-angles-down"
+                                style="color: black;padding-left: 10px;cursor: pointer;"></i> <i
+                                class="founderbtnup fa fa-solid fa-angles-up"
+                                style="color: black;padding-left: 10px;cursor: pointer; display: none;"></i> </h4>
+                        <p class="founderpara" style="color: #573f4c; margin-top: 10px; padding: 20px; display: none; font-size: 19px;">
+                            On behalf of our great team, I would like to welcome you to EIFA Academy. We are always at your
+                            service,
+                            working with passion and dedication to offer you an accademically comprehensive and personally
+                            rewarding education.
+                            <br>
+                            All we request you in exchange is that you make an equal effort to invest passion and dedication
+                            into your soccer skills and carrer.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class=""
+                        style="border-bottom: 5px solid #6b946f;border-top: 5px solid #6b946f;border-radius: 10px; border-left: 2px solid #83a987;border-right: 2px solid #83a987; padding: 30px;margin-top: 20px;">
+                        <div class="img-fluid"
+                            style="background-image: url(images/karimfro.jpg); width: 100px;height: 100px;background-position: center;background-size: cover;border-radius: 60px;box-shadow: 0 0 20px 5px rgb(140, 106, 106);">
+                        </div>
+                        <h4 style="color: #573f4c; margin-top: 10px;">DIRECTOR MESSAGE <i
+                                class="directorbtn fa fa-bounce fa-solid fa-angles-down"
+                                style="color: black;padding-left: 10px;cursor: pointer;"></i> <i
+                                class="directorbtnup fa fa-solid fa-angles-up"
+                                style="color: black;padding-left: 10px;cursor: pointer; display: none;"></i> </h4>
+                        <p class="directorpara" style="color: #573f4c; margin-top: 10px; padding: 20px; display: none;font-size: 19px;">
+                            Here, at EIFA, we firmly belive that as an educational institute, it is our duty to not only to
+                            enable the students to succeed in thier
+                            persuit of perfecting their skills in football but also to enact thier bright young minds in the
+                            accession and inttellectual argumentation of
+                            the society as whole. <br>
+                            We assert the students to explore the horizones of their capabilities in Football.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUPPORT US -->
+    <section>
+        <div class="qrsupport">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <p class="qrpara" align="CENTER">
+                            <span class="sp2">SUPPORT US</span><br>
+                            <img src="images/gpay.jpg" class="mt-3" alt="gpay" style="border: 3px solid #103160;border-radius: 10px; padding: 20px;width: 250px;height: 250px;">
+                        </p>
+                    </div>
+                    <div class="qrinfo d-none d-md-block col-12 col-lg-6 p-5 m-auto">
+                        <h1>
+                            Scan This Qr Code To Support Us
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERSONALITIES ROW -->
+    <section id="row6" class="personalisection">
+        <div class="">
+            <h2 class="col-12 text-center ttl">OUR SUPPORT SYSTEM</h2>
+        </div>
+        <div class="row personaliholder mt-3">
+            <div class="personcards d-flex">
+
+                <div class="person card ml-4 mr-2">
+                    <img style="height: 10rem; background-image: url(images/personali_1.jpg); background-position: center; background-size: cover;border-top-left-radius: 8px;border-top-right-radius: 8px;" class="card-img-top img-fluid" >
+                    <div class="card-body" style="height: 165px;overflow-y: scroll;">
+                        <h5 class="card-title">Technical Director</h5>
+                        <span class="personname">Abdul Salam</span><br> <span class="persontext">Technical Director and AFC Diploma-Licenced Coach, Trainer, Kerala India</span>
+                        <a href="http://instagram.com/name"><div style="background-image: url(images/instafollowicon.jpg); background-position: center; background-size: cover; width: 110px; height: 34px;" class="img-fluid"></div></a>
+                    </div>
+                </div>
+                <div class="person card mr-3">
+                    <img style="height: 10rem; background-image: url(images/personali_2.jpg); background-position: center; background-size: cover;border-top-left-radius: 8px;border-top-right-radius: 8px;" class="card-img-top img-fluid" >
+                    <div class="card-body" style="height: 165px;overflow-y: scroll;">
+                        <h5 class="card-title">EIFA-Founder</h5>
+                        <span class="personname">Noushad Master</span><br> <span class="persontext">The Eifa Founder and D-Licenced Coach, Trainer, Kerala India</span>
+                        <a href="http://instagram.com/name"><div style="background-image: url(images/instafollowicon.jpg); background-position: center; background-size: cover; width: 110px; height: 34px;" class="img-fluid"></div></a>
+                    </div>
+                </div>
+                <div class="person card mr-3">
+                    <img style="height: 10rem; background-image: url(images/sarfkka.jpg); background-position: center; background-size: cover;border-top-left-radius: 8px;border-top-right-radius: 8px;" class="card-img-top img-fluid" >
+                    <div class="card-body" style="height: 165px;overflow-y: scroll;">
+                        <h5 class="card-title">EIFA-President</h5>
+                        <span class="personname">Sharafudheen</span><br> <span class="persontext">The President Of EIFA Kerala - India</span>
+                        <a href="http://instagram.com/name"><div style="background-image: url(images/instafollowicon.jpg); background-position: center; background-size: cover; width: 110px; height: 34px;" class="img-fluid"></div></a>
+                    </div>
+                </div>
+                <div class="person card mr-3">
+                    <img style="height: 10rem; background-image: url(images/shibilka.jpg); background-position: center; background-size: cover;border-top-left-radius: 8px;border-top-right-radius: 8px;" class="card-img-top img-fluid" >
+                    <div class="card-body" style="height: 165px;overflow-y: scroll;">
+                        <h5 class="card-title">EIFA-Official</h5>
+                        <span class="personname">Shibili Sharafudheen</span><br> <span class="persontext">The EIFA Official Kerala - India</span>
+                        <a href="http://instagram.com/name"><div style="background-image: url(images/instafollowicon.jpg); background-position: center; background-size: cover; width: 110px; height: 34px;" class="img-fluid"></div></a>
+                    </div>
+                </div>
+                <div class="person card mr-3">
+                    <img style="height: 10rem; background-image: url(images/Photoshoots/jazeel.jpg); background-position: center; background-size: cover;border-top-left-radius: 8px;border-top-right-radius: 8px;" class="card-img-top img-fluid" >
+                    <div class="card-body" style="height: 165px;overflow-y: scroll;">
+                        <h5 class="card-title">Trainer</h5>
+                        <span class="personname">Jazeel</span><br> <span class="persontext">AIFF D-Licenced Coach, Basic skill Trainer</span>
+                        <a href="http://instagram.com/name"><div style="background-image: url(images/instafollowicon.jpg); background-position: center; background-size: cover; width: 110px; height: 34px;" class="img-fluid"></div></a>
+                    </div>
+                </div>
+                <div class="person card mr-3">
+                    <img style="height: 10rem; background-image: url(images/Photoshoots/ajmal.jpg); background-position: center; background-size: cover;border-top-left-radius: 8px;border-top-right-radius: 8px;" class="card-img-top img-fluid" >
+                    <div class="card-body" style="height: 165px;overflow-y: scroll;">
+                        <h5 class="card-title">Trainer</h5>
+                        <span class="personname">Ajmal</span><br> <span class="persontext">AIFF D-Licenced Coach, Basic skill Trainer, Karimpalayil Vazhampuram</span>
+                        <a href="http://instagram.com/name"><div style="background-image: url(images/instafollowicon.jpg); background-position: center; background-size: cover; width: 110px; height: 34px;" class="img-fluid"></div></a>
+                    </div>
+                </div>
+                <div class="person card mr-3">
+                    <img style="height: 10rem; background-image: url(images/Photoshoots/kunjalavi.jpg); background-position: center; background-size: cover;border-top-left-radius: 8px;border-top-right-radius: 8px;" class="card-img-top img-fluid" >
+                    <div class="card-body" style="height: 165px;overflow-y: scroll;">
+                        <h5 class="card-title">Trainer</h5>
+                        <span class="personname">Kunjalavi Master</span><br> <span class="persontext">AIFF D-Licenced Coach, First-Aid, Basic skill Trainer.</span>
+                        <a href="http://instagram.com/name"><div style="background-image: url(images/instafollowicon.jpg); background-position: center; background-size: cover; width: 110px; height: 34px;" class="img-fluid"></div></a>
+                    </div>
+                </div>
+                <div class="person card mr-3">
+                    <img style="height: 10rem; background-image: url(images/Photoshoots/shabeerali.jpg); background-position: center; background-size: cover;border-top-left-radius: 8px;border-top-right-radius: 8px;" class="card-img-top img-fluid" >
+                    <div class="card-body" style="height: 165px;overflow-y: scroll;">
+                        <h5 class="card-title">Trainer</h5>
+                        <span class="personname">Shabeer Ali</span><br> <span class="persontext">AIFF D-Licenced Coach, Basic skill Trainer, Karimpalayil Vazhampuram</span>
+                        <a href="http://instagram.com/name"><div style="background-image: url(images/instafollowicon.jpg); background-position: center; background-size: cover; width: 110px; height: 34px;" class="img-fluid"></div></a>
+                    </div>
+                </div>
+                <div class="person card mr-3">
+                    <img style="height: 10rem; background-image: url(images/Photoshoots/baburaj.jpg); background-position: center; background-size: cover;border-top-left-radius: 8px;border-top-right-radius: 8px;" class="card-img-top img-fluid" >
+                    <div class="card-body" style="height: 165px;overflow-y: scroll;">
+                        <h5 class="card-title">Trainer</h5>
+                        <span class="personname">Baburaj</span><br> <span class="persontext">AIFF D-Licenced Coach, Basic skill Trainer</span>
+                        <a href="http://instagram.com/name"><div style="background-image: url(images/instafollowicon.jpg); background-position: center; background-size: cover; width: 110px; height: 34px;" class="img-fluid"></div></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MEDIA ROW -->
+    <section>
+        <div class="row mediarow" style="margin-top: 5px;margin-bottom: 20px;">
+            <div class="container">
+
+                    <div class="col-12 col-lg-6" >
+                        <div class="card mt-3" style="width: 14rem; margin-bottom: 20px;">
+                            <img src="images/achievements.jpg"
+                                class="card-img-top img-fluid">
+                            <div class="card-body" >
+                                <h5 class="card-title">Visit Our Gallery</h5>
+                                <a href="pages/gallery.html" ><button class="btn btn-primary">Click Here</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="col-12 col-lg-6" style="color: white;font-size: 18px;">
+                        What is the importance of a Gallery ?<br>
+                        Galleries Can Showcase the History Of a Particular Culture in Visual Manner.. As the Visual History Provides a Snapshot Of What Life was Like at a
+                        Particular Period of Time...
+                    </p>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row p-2">
+            <img src="images/eflogoheader.png" class="col-3 col-lg-2">
+            <img src="images/karimlogo.png" class="col-2 col-lg-2" style="object-fit: contain;">
+            <img src="images/tnclogo.png" class="col-2 col-lg-2" style="object-fit: contain;">
+            <img src="images/zycologoheader.png" class="col-2 col-lg-2" style="object-fit: contain;">
+            <img src="images/bircheslogo.png" class="col-2 col-lg-2" style="object-fit: contain;">
+        </div>
+        <div class="row p-3">
+            <p style="color: white;" class="m-auto">
+                This site is About EIFA Football Academy situated in the Kerala India.
+            </p>
+            <a href="pages/gallery.html" class="p-2">Gallery</a>
+            <a href="pages/administrators.html" class="p-2">Administrators</a>
+            <a href="#" class="p-2 efteambtn">Supprt system</a>
+            <a href="#" class="p-2 adtrainingbtn">Advance Training</a>
+            <a href="#" class="p-2 mssnvssnbtn">Mission Vission</a>
+            <a href="#" class="p-2 coachesbtn">Our Coaches</a>
+        </div>
+        <div class="col-12">
+            <a href="pages/gasal.html">
+                <h2 class="text-center myinfo p-3">
+                    <i class="fa-solid fa-info-circle"></i>
+                    Devoloper info
+                </h2>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script> -->
+    <script src="action.js"></script>
+    <script>
+        $(document).ready(function(){
+
+    // SCROLLING ACTIONS
+    $("#btnScrollToTop").click(function(){
+        $("html, body").animate({
+            scrollTop: $(".header").offset().top
+        }, 500)
+    })
+    $("#adminbtn").click(function(){
+        $("html, body").animate({
+            scrollTop: $("#row6").offset().top
+        }, 500)
+    })
+    $(".efteambtn").click(function(){
+        $("html, body").animate({
+            scrollTop: $("#row6").offset().top
+        }, 500)
+    })
+    $("#aboutbtn").click(function(){
+        $("html, body").animate({
+            scrollTop: $("#row2").offset().top
+        }, 500)
+    })
+    $(".mssnvssnbtn").click(function(){
+        $("html, body").animate({
+            scrollTop: $("#missionrow").offset().top
+        }, 500)
+    })
+    $(".coachesbtn").click(function(){
+        $("html, body").animate({
+            scrollTop: $("#coachesrow").offset().top
+        }, 500)
+    })
+    $(".adtrainingbtn").click(function(){
+        $("html, body").animate({
+            scrollTop: $("#adtrainingrow").offset().top
+        }, 500)
+    })
+    $(".fdmessagebtn").click(function(){
+        $("html, body").animate({
+            scrollTop: $("#fdmessagerow").offset().top
+        }, 500)
+    })
+    $(".regbtn").click(function(){
+        $("html, body").animate({
+            scrollTop: $("#row3").offset().top
+        }, 500)
+    })
+
+    // NAVBAR SPAN ICONS HOVER EFECT
+    $(".homebtn").mouseenter(function(){
+        $(".homeic").css({"color":"rgb(255, 217, 0)"})
+    })
+    $(".homebtn").mouseleave(function(){
+        $(".homeic").css({"color":"#ffe8e8"})
+    })
+    $(".explorebtn").mouseenter(function(){
+        $(".exploreic").css({"color":"rgb(255, 217, 0)"})
+    })
+    $(".explorebtn").mouseleave(function(){
+        $(".exploreic").css({"color":"#ffe8e8"})
+    })
+    $(".gallbtn").mouseenter(function(){
+        $(".gallic").css({"color":"rgb(255, 217, 0)"})
+    })
+    $(".gallbtn").mouseleave(function(){
+        $(".gallic").css({"color":"#ffe8e8"})
+    })
+    $("#aboutbtn").mouseenter(function(){
+        $(".aboutic").css({"color":"rgb(255, 217, 0)"})
+    })
+    $("#aboutbtn").mouseleave(function(){
+        $(".aboutic").css({"color":"#ffe8e8"})
+    })
+    $("#adminbtn").mouseenter(function(){
+        $(".adminic").css({"color":"rgb(255, 217, 0)"})
+    })
+    $("#adminbtn").mouseleave(function(){
+        $(".adminic").css({"color":"#ffe8e8"})
+    })
+    $("#contactusbtn").mouseenter(function(){
+        $(".contactic").css({"color":"rgb(255, 217, 0)"})
+    })
+    $("#contactusbtn").mouseleave(function(){
+        $(".contactic").css({"color":"#ffe8e8"})
+    })
+
+    // FOUNDER BUTTONS
+    $(".founderbtn").click(function(){
+        $(".founderpara").slideToggle(500)
+        $(".founderbtnup").toggle()
+        $(".founderbtn").toggle()
+    })
+    $(".founderbtnup").click(function(){
+        $(".founderpara").slideToggle(500)
+        $(".founderbtnup").toggle()
+        $(".founderbtn").toggle()
+    })
+    $(".directorbtn").click(function(){
+        $(".directorpara").slideToggle(500)
+        $(".directorbtnup").toggle()
+        $(".directorbtn").toggle()
+    })
+    $(".directorbtnup").click(function(){
+        $(".directorpara").slideToggle(500)
+        $(".directorbtnup").toggle()
+        $(".directorbtn").toggle()
+    })
+    
+    // NAVBAR MENU-ICONBARS ANIMATION
+    $(".menuicons").click(function(){
+        $(".iconx").toggle(300)
+        $(".iconbars").toggle(300)
+    })
+
+    // SIDEBAR MENU-ICONBARS ANIMATION
+    $(".sidebars").click(function(){
+        $(".sdiconx").toggle(300)
+        $(".sdiconbars").toggle(300)
+        $(".sidebaricons").slideToggle(300)
+    })
+
+    
+})
+    </script>
+</body>
+</html>

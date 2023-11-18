@@ -1,0 +1,560 @@
+@font-face {
+    font-family: mcontenthfont;
+    src: url(../fonts/abel-regular.ttf);
+}
+@font-face {
+    font-family: mcontentpfont;
+    src: url(../fonts/Bainsley_Roman.otf);
+}
+@font-face {
+    font-family: sidehfont;
+    src: url(../fonts/Azonix.otf);
+}
+@font-face {
+    font-family: pandp;
+    src: url(../fonts/pricedown\ bl.otf);
+}
+@font-face {
+    font-family: headfond;
+    src: url(../fonts/ethnocentric\ rg.otf);
+}
+@font-face {
+    font-family: adfont;
+    src: url(../fonts/Advertising\ Script\ Bold\ Trial.ttf);
+}
+body{
+    margin: initial;
+}
+/* HEADER BACKzz */
+.header{
+    background-color: rgba(0, 0, 0, 0.764);
+    background-image: url(../images/headerbk.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    padding-bottom: 60px;
+}
+
+.iconbars{
+    font-size: 24px;
+    color: #ebd291;
+}
+.iconx{
+    font-size: 32px;
+    color: #ff3333;
+    text-shadow: 2px 3px 5px #860000;
+    display: none;
+}
+
+.navLink{
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.2s;
+    transition: ease-in;
+    border-bottom: 3px solid #565657c7;
+    text-align: center;
+    text-shadow: 4px 2px 10px #dc0054;
+}
+.navLink:hover{
+    font-weight: 600;
+    border-bottom: 2px solid rgb(255, 217, 0);
+    border-radius: 10px;
+    text-shadow: 3px 5px 10px #ba8b59;
+}
+.navbar .navbar-toggler{
+    outline: none!important;
+    border: none!important;
+}
+
+.eflogo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.animhdtwo{
+    text-transform: uppercase;
+   background-image: linear-gradient(
+    220deg,
+     #ff8c86 0%,
+     rgba(49, 4, 26, 0.834) 29%,
+     #ffd2b0 67%,
+     #d6ffb5 100%
+   );
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   color: #fff;
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 2s linear infinite;
+   display: inline-block;
+
+    font-weight: 800;
+    font-size: 32px;
+ }
+ 
+ @keyframes textclip {
+   to {
+     background-position: 200% center;
+   }
+}
+
+.locbtn{
+    width: 200px;
+    background: #470077;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+/* POP-UP Styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3000;
+    overflow-y: scroll;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: #d80606;
+}
+
+.popup .content p {
+    max-height: 30%;
+    overflow: auto;
+    color: #2c383d;
+    font-weight: 700;
+}
+
+.popup .content a {
+    color: #470077;
+}
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+  .eflogohold{
+    border-radius: 5px;
+}
+.efnavhold{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar{
+    border-radius: 5px;
+}
+.efslider{
+    margin-top: 20px;
+}
+.efsliderholder{
+    background-color: rgba(0, 0, 0, 0.809);
+    background-image: url(../images/campsTours.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 20px;
+}
+.slidercaption:hover{
+    display: contents;
+    background-color: rgba(0, 0, 0, 0.302);
+    border-radius: 5px;
+}
+.imagepara{
+    height: 400px;
+    margin-top: 20px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 20px;
+    border-bottom: 4px solid #ae6378;
+    border-top: 4px solid #ae6378;
+    border-radius: 10px;
+}
+/* IMAGE SLIDER BRAND BTN */
+.brandbtn{
+    font-size: 28px;
+    color: rgb(255, 213, 0);
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.brandbtn:hover{
+    color: #ffffff;
+}
+
+.advtrain{
+    background-color: rgb(255, 255, 234);
+}
+
+.mcontent{
+    align-items: center;
+    color: #2d1518;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.mcontent h1{
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-shadow: 0  3px 7px #c1974a;
+    font-weight: 600;
+}
+.mcontent p{
+    font-size: 21px;
+    text-shadow: 0  3px 7px #c1974a;
+    line-height: 29px;
+}
+.mcontent2{
+    color: #234e41;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+.mcontent2 h1{
+    font-size: 29px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.mcontent2 p{
+    font-size: 21px;
+    line-height: 29px;
+}
+.pandp{
+    color: #234e41;
+    text-align: left;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+.pandp h1{
+    font-size: 29px;
+    font-family: pandp;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.pandp p{
+    font-size: 21px;
+    font-weight: bolder;
+    line-height: 29px;
+}
+
+.eifacoaches{
+    background-image: linear-gradient(#2aa771, rgb(3, 41, 50));
+    padding-bottom: 15px;
+}
+.coaches{
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.coach{
+    background-color: #fff8c0;
+    border-radius: 10px;
+}
+.coach-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+}
+.coach h3{
+    font-size: 22px;
+}
+.coach h4{
+    font-size: 18px;
+}
+
+/* THE MISSION AND VISSION */
+.misvish{
+    text-transform: uppercase;
+   background-image: linear-gradient(
+    220deg,
+     #3d0020 0%,
+     #ffbadc 29%,
+     #a95ab9 67%,
+     #422a00 100%
+   );
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   color: #fff;
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 1s linear infinite;
+   display: inline-block;
+
+    font-weight: 800;
+    font-size: 32px;
+    font-family: headfond;
+ }
+ 
+ @keyframes textclip {
+   to {
+     background-position: 500% center;
+   }
+}
+.misvis-box{
+    background-color: rgba(54, 48, 36, 0.539);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    overflow-y: scroll;
+    height: 330px;
+}
+.misvis-box p{
+    color: rgb(184, 159, 129);
+    font-weight: 500;
+    font-size: 20px;
+    text-shadow: 3px 3px 15px black;
+}
+.misvisrow{
+    /* margin-top: 80px; */
+    padding: 40px;
+    background-color: #000000af;
+    background-image: url(../images/ourCoaches.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.founder{
+    background-image: linear-gradient(rgb(252, 227, 179), white);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* QR Support */
+.qrsupport{
+    background-color: rgba(0, 0, 0, 0.837);
+    background-image: url(../images/back3.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 40px;
+    margin-top: 20px;
+}
+.qrpara .sp2{
+    color: #00bba5;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 2px 4px 2px #147861;
+}
+.qrinfo{
+    color: white;
+}
+
+/* Personaali Row */
+.persons{
+    overflow-x: auto;
+}
+.person{
+    width: 14rem;
+    border-radius: 8px;
+    box-shadow: 0 0 25px 2px rgba(134, 0, 74, 0.85);
+    border: 2px solid white;
+}
+.personname{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+.persontext{
+    font-weight: 500;
+    color: #161616;
+}
+.personaliholder{
+    overflow-x: auto;
+}
+.personalisection{
+    background-color: orange;
+    padding-bottom: 30px;
+}
+.personalisection .ttl{
+    padding-top: 25px;
+    color: #090909;
+    font-weight: 700;
+    text-shadow: 2px 3px 5px black;
+}
+
+/* Gallery ROW */
+.mediarow{
+    background-color: rgba(0, 0, 0, 0.585);
+    background-image: url(../images/schoolPrograms.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+/* Scroll To Top */
+#btnScrollToTop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #380016;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 3000;
+}
+#btnScrollToTop:active{
+    background: #630029;
+}
+
+/* CONTENTS BTN in Header */
+.regbtn{
+    width: 160px;
+    outline: none!important;
+    background-image: linear-gradient(to right, #e84a5f, #fe9d96);
+    border-radius: 35px;
+    border: none;
+    float: right;
+    color: #02161e;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .4s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.regbtn:hover{
+    background-image: linear-gradient(to right, #fe9d96, #f0566b, #e84a5f);
+    transition: 0.4s;
+}
+
+/* Request a Call */
+.reqcallbtn{
+    width: 140px;
+    height: 30px;
+    outline: none!important;
+    background-image: linear-gradient(to right, #e84a5f, #fe9d96,#e84a5f);
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+    color: #02161e;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .4s;
+}
+.reqcallbtn:hover{
+    background-image: linear-gradient(to right, #fe9d96, #f4e195, #fe9d96);
+    color: darkblue;
+}
+
+/* THE SIDE BAR STYLING */
+.sidebar{
+    background: rgba(122, 88, 46, 0.515);
+    position: fixed;
+    z-index: 3000;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: 45px;
+    padding: 8px;
+}
+.sidebar i{
+    color: rgb(60, 2, 19);
+    font-size: 22px;
+    padding: 4px;
+}
+.sidebar i:hover{
+    color: rgb(201, 141, 1);
+    cursor: pointer;
+}
+
+/* footer */
+footer{
+    background-color: #090909;
+}
+.myinfo{
+    color: #088f80;
+    font-size: 18px;
+}
+
+/*           EDITED CONTENTS IN COMPUTER AND MOBILE           */
+
+
+/* SCROLL BAR EDITS */
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track{
+    background: rgba(255, 255, 255, 0.413);
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient( #1f010f, #b53d4d);
+    border-radius: 20px;
+}
+
+/* ON-MOBILE EDITS */
+@media (max-width: 760px){
+    .coaches::-webkit-scrollbar{
+        display: none;
+    }
+    .personaliholder::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+/* On COMPUTER EDITS */
+@media (min-width: 760px){
+    .navphone{
+        display: none;
+    }
+}
+
